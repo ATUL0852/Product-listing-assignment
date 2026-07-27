@@ -1,26 +1,142 @@
-@import "tailwindcss";
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  background-color: #dfe4e8;
+  color: #222;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+/* ===========================  Layout  =========================== */
+
+.container {
+  width: min(90%, 81.25rem);
+  margin: 2.5rem auto;
+}
+
+.heading {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.total-products {
+  text-align: center;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+
+.loading {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 5rem;
+  color: #0070f3;
+}
+
+
+.error-box {
+  max-width: 30rem;
+  margin: 5rem auto;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 0.75rem;
+  text-align: center;
+  box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, .08);
+}
+
+.error-box h2 {
+  color: #d32f2f;
+  margin-bottom: 0.75rem;
+}
+
+.error-box p {
+  color: #555;
+}
+
+/* ===========================  Products Grid  =========================== */
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+/* ===========================  Responsive  =========================== */
+
+@media (max-width: 64rem) {
+  .products-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 48rem) {
+  .container {
+    width: 92%;
+  }
+
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .heading {
+    font-size: 1.75rem;
+  }
+}
+
+@media (max-width: 30rem) {
+  .container {
+    width: 95%;
+  }
+
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .heading {
+    font-size: 1.5rem;
+  }
+}
+
+
+/* ===========================  Product Animation  =========================== */
+
+.product-animation {
+  opacity: 0;
+  animation: fadeInUp 0.4s ease forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px) scale(0.98);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
 }
