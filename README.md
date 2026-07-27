@@ -1,36 +1,127 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Product Listing Assignment
 
-## Getting Started
+A responsive product listing application built with **Next.js 15 (App Router)** that fetches product data from the Fake Store API. The application provides a clean user interface with real-time product search, loading and error handling, and responsive design for different screen sizes.
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 🔗 Live Demo
+
+- **Live Application:** https://your-vercel-url.vercel.app
+
+
+---
+
+## 🚀 Features
+
+- Fetches product data from the Fake Store API
+- Displays products in a responsive grid layout
+- Real-time product search by title
+- Loading state while fetching data
+- Error handling for failed API requests
+- Optimized image rendering using Next.js Image component
+- Reusable React components
+- Mobile-first responsive design
+
+---
+
+## 🛠️ Tech Stack :-
+
+- Next.js 15 (App Router)
+- React
+- JavaScript (ES6+)
+- CSS3
+- Fake Store API
+
+---
+
+## 📁 Project Structure
+
+```
+product-listing-assignment/
+│
+├── app/
+│   ├── globals.css
+│   ├── layout.js
+│   └── page.js
+│
+├── components/
+│   ├── ProductCard.jsx
+│   ├── ProductCard.css
+│   ├── SearchBar.jsx
+│   └── SearchBar.css
+│
+├── services/
+│   └── api.js
+│
+├── public/
+├── next.config.mjs
+├── package.json
+└── README.md
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
+### Install dependencies
 
-To learn more about Next.js, take a look at the following resources:
+( npm install  )
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Start the development server
 
-## Deploy on Vercel
+(  npm run dev   )
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Open your browser and visit:
+
+```
+http://localhost:3000
+```
+
+---
+
+## 🌐 API Used
+
+This project uses the Fake Store API.
+
+Endpoint:
+
+```
+https://fakestoreapi.com/products
+
+---
+
+## 📸 Application Features
+
+- Responsive product listing
+- Product image
+- Product title
+- Product category
+- Product price
+- Product rating
+- Product description
+- Instant search filtering
+- Loading indicator
+- Error handling
+
+---
+
+## 📦 Build for Production
+
+```bash
+npm run build
+```
+
+Run the production server:
+
+```bash
+npm start
+```
+
+---
+
+## 👨‍💻 Author
+
+**Atul Bhardwaj**
+(https://github.com/ATUL0852)
