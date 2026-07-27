@@ -121,6 +121,16 @@ npm start
 
 ---
 
+## Future Improvements
+
+Given more time, I would:
+
+- Add category-based filtering and sorting options.
+- Implement pagination or infinite scrolling.
+- Add unit and integration tests.
+- Improve accessibility and navigation.
+- Introduce skeleton loaders for a smoother loading experience.
+
 ## 👨‍💻 Author
 
 **Atul Bhardwaj**
