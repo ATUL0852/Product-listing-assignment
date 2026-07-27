@@ -5,7 +5,7 @@ A responsive product listing application built with **Next.js 15 (App Router)** 
 
 ## 🔗 Live Demo
 
-- **Live Application:** https://your-vercel-url.vercel.app
+- **Live Application:** product-listing-assignment-sable.vercel.app
 
 
 ---
